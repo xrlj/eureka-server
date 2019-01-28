@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: xrlj-eureka-server
+  profiles:
+    active: dev
+logging:
+  level:
+    com:
+      netflix:
+        eureka: off
+        discovery: off

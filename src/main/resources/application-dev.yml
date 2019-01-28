@@ -1,0 +1,15 @@
+server:
+  port: 2222
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip_address}:${server.port}
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false  #不注册自己
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+      enable-self-preservation: false #设为false，关闭自我保护
+      eviction-interval-timer-in-ms: 4000  # 清理间隔（单位毫秒，默认是60*1000）
+
