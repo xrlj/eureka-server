@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.xrlj</groupId>
-	<artifactId>xrlj-eureka-server</artifactId>
+	<artifactId>eureka-server</artifactId>
 	<version>0.0.1</version>
-	<name>xrlj-eureka-server</name>
+	<name>eureka-server</name>
 	<description>eureka服务注册中心</description>
 
 	<properties>
