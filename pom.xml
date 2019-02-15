@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.xrlj</groupId>
 	<artifactId>eureka-server</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<name>eureka-server</name>
 	<description>eureka服务注册中心</description>
 
@@ -42,7 +42,7 @@
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<version>1.4.9</version>
 				<configuration>
-					<repository>119.145.41.171:8082/xrlj/${project.artifactId}</repository>
+					<repository>119.145.41.171:8082/${docker.name.app.prefix}/${project.artifactId}</repository>
 					<tag>${project.version}</tag>
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 				</configuration>
