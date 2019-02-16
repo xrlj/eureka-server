@@ -1,5 +1,3 @@
-server:
-  port: 2222
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.cloud.client.ip_address}:${server.port}

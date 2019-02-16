@@ -1,5 +1,3 @@
-server:
-  port: 2223
 eureka:
   instance:
     hostname: eureka-server3
