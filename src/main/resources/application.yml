@@ -11,3 +11,4 @@ logging:
       netflix:
         eureka: off
         discovery: off
+  file: logs/${spring.application.name}.log
