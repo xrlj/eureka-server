@@ -1,0 +1,6 @@
+eureka:
+  instance:
+    hostname: eureka-server
+  client:
+    service-url:
+      defaultZone: http://120.79.2.30:${server.port}/eureka/,http://120.79.41.58:${server.port}/eureka/ #做集群，要配host
