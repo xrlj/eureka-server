@@ -8,7 +8,7 @@ https://spring.io/guides/gs/spring-boot-docker/
     
     ----------------------
     
-    docker run --restart=always --name eureka-server-test -e "SPRING_PROFILES_ACTIVE=test" -p 1111:1111 -t 120.79.2.30:8082/xrlj/eureka-server:0.0.1
+    docker run --restart=always --name eureka-server-test -e "SPRING_PROFILES_ACTIVE=test" -p 1111:1111 -t ip:8082/xrlj/eureka-server:0.0.1
     
     ------------------------------------
     
