@@ -5,10 +5,3 @@ spring:
     name: eureka-server
   profiles:
     active: dev
-logging:
-  level:
-    com:
-      netflix:
-        eureka: off
-        discovery: off
-  file: logs/${spring.application.name}.log
