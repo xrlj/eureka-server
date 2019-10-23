@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #构建docker 镜像并上传到私服
-mvn clean install dockerfile:build
+# mvn加上参数-U，强制更新，以防无法及时更新依赖包
+mvn clean install -U dockerfile:build
 sleep 2
-mvn clean install dockerfile:push
+mvn clean install -U dockerfile:push
