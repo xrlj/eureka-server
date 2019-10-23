@@ -1,4 +1,4 @@
-FROM xinxiamu/jre-server:11
+FROM xinxiamu/alpine-java:11
 VOLUME /tmp
 ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
