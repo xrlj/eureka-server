@@ -6,7 +6,7 @@ https://spring.io/guides/gs/spring-boot-docker/
 
 1.给可执行文件赋权
 
-    chmod -R u+x docker-image-push.sh
+    chmod +x docker-image-push.sh
     
 2.运行该文件
 
