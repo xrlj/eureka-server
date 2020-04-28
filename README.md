@@ -16,6 +16,7 @@ https://spring.io/guides/gs/spring-boot-docker/
 
 ### dev
 
+    docker run --restart=always --name eureka-server -e "SPRING_PROFILES_ACTIVE=dev" -e "EUREKA_INSTANCE_IP-ADDRESS=192.168.0.3" -p 1111:1111 -v /apps/eureka-server/tmp:/tmp -v /apps/eureka-server/logs:/logs -d 192.168.0.3:8082/xrlj/eureka-server:0.0.1
    
 
 ### test
@@ -24,7 +25,7 @@ https://spring.io/guides/gs/spring-boot-docker/
     
     ----------------------
     
-    docker run --restart=always --name eureka-server-test -e "SPRING_PROFILES_ACTIVE=test" -p 1111:1111 -t ip:8082/xrlj/eureka-server:0.0.1
+    docker run --restart=always --name eureka-server-test -e "SPRING_PROFILES_ACTIVE=test" -p 1111:1111 -d ip:8082/xrlj/eureka-server:0.0.1
     
     ------------------------------------
     
