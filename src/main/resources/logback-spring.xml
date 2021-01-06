@@ -77,9 +77,13 @@
         </springProfile>
 
         <!--测试、生产环境-->
-        <springProfile name="test | prod | prod1 | prod2 | prod3">
+        <springProfile name="test | prod1 | prod2 | prod3">
             <appender-ref ref="flatfile"/>
             <appender-ref ref="logstash"/>
+        </springProfile>
+
+        <springProfile name="prod">
+            <appender-ref ref="flatfile"/>
         </springProfile>
     </root>
 </configuration>
