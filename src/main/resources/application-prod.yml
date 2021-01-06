@@ -4,4 +4,4 @@ eureka:
     hostname: eureka-server
   client:
     service-url:
-      defaultZone: http://8.210.22.230:1111/eureka/
+      defaultZone: http://172.31.94.241:1111/eureka/
