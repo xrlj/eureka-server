@@ -5,4 +5,4 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://127.0.0.1:${server.port}/eureka/
+      defaultZone: http://172.16.19.211:${server.port}/eureka/

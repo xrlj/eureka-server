@@ -83,7 +83,7 @@
             <appender-ref ref="logstash"/>
         </springProfile>
 
-        <springProfile name="prod">
+        <springProfile name="prod | prod-single-lxx">
             <appender-ref ref="console"/>
             <appender-ref ref="flatfile"/>
         </springProfile>
