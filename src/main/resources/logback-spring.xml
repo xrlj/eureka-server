@@ -71,7 +71,7 @@
 
     <root level="INFO">
         <!--开发环境-->
-        <springProfile name="dev | local | local-home">
+        <springProfile name="dev | local | local-home1 | local-home2 | local-home3">
             <appender-ref ref="console"/>
             <appender-ref ref="flatfile"/>
         </springProfile>
