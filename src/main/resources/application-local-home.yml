@@ -5,4 +5,5 @@ eureka:
     hostname: 192.168.10.111
   client:
     service-url:
-      defaultZone: ${EUREKA_URL}
+      defaultZone: http://192.168.10.111:1111/eureka/,http://192.168.10.112:1111/eureka/,http://192.168.10.113:1111/eureka/
+    enabled: true
