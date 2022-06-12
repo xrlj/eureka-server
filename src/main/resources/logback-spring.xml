@@ -80,7 +80,7 @@
         <springProfile name="test | prod1 | prod2 | prod3">
             <appender-ref ref="console"/>
             <appender-ref ref="flatfile"/>
-            <appender-ref ref="logstash"/>
+<!--            <appender-ref ref="logstash"/>-->
         </springProfile>
 
         <springProfile name="prod | prod-single-lxx">
