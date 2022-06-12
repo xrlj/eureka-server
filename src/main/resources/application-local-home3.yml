@@ -1,7 +1,7 @@
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
-      hostname: eureka-server3
+    hostname: eureka-server3
   client:
     service-url:
       defaultZone: http://eureka-server1:${server.port}/eureka/,http://eureka-server2:${server.port}/eureka/ #做集群
